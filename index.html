@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD Donation Hub</title>
+
+    <!-- Google Font Lexend-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4e8371586c.js" crossorigin="anonymous"></script>
+
+    <!-- TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1dd100',
+                        secondary: '#F9F7F3',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="font-Lexend">
+    <header class="sticky top-0">
+        <nav class="bg-[#F9F7F3]">
+            <div class="flex flex-col sm:flex-row justify-around items-center gap-3 sm:gap-0 pb-10 pt-4">
+                <button class="btn bg-primary text-secondary border-primary">
+                    <a href="./blog/blog.html">Blog</a>
+                </button>
+                <div class="flex items-center gap-3">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <p>Donate Bangladesh</p>
+                </div>
+                <div class="flex items-center gap-3 lg:flex">
+                    <img src="./assets/coin.png" alt="Coins">
+                    <p id="initial-total-balance">5550 BDT</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-3 py-10 bg-[#FFFFFF]">
+                <button id="donation" class="btn bg-white">Donation</button>
+                <button id="history" class="btn bg-white">History</button>
+            </div>
+        </nav>
+    </header>
+ 
+
+
+
+    
+
+<script src="scripts.js"></script>
+ 
+</body>
+</html>
