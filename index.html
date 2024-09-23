@@ -58,8 +58,72 @@
  
 
 
+    <main class="bg-[#FFFFFF] my-5">
+        
+        <!-- Donate for Noakhali Content -->
+        <div class="donation-section" id="noakhali-section">
+            <div class="flex flex-col md:flex-row border-solid border-2 rounded-lg mx-4 sm:mx-8 md:mx-32 justify-center items-center gap-4 py-5">
+                <div class="px-4">
+                    <img src="./assets/noakhali.png" alt="Noakhali">
+                </div>
+                <div class="px-4">
+                    <div class="btn">
+                        <img src="./assets/coin.png" alt="Coins">
+                        <p id="initial-noakhali-balance">0 BDT</p>
+                    </div>
+                    <h2 class="card-title pt-2">Donate for Flood at Noakhali</h2>
 
-    
+
+                    <p class="   sm:w-72 md:w-96 py-5 ">The recent floods in Noakhali have caused severe damage to homes and infrastructure, leaving many in urgent need of support. Your donation will help provide essential supplies like food, water, and medical aid. Every contribution, big or small, makes a significant difference in helping those affected by this disaster.</p>
+
+
+                    <div class="grid gap-3">
+                        <input type="text" placeholder="Donation Amount" class="input input-bordered w-full md:w-96" id="donation-input-noakhali">
+                        <button class="btn w-full md:w-96 bg-primary" id="donate-button-noakhali">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+         <!-- Successful Pop-up -->
+         <dialog id="successful-pop-up" class="modal">
+            <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center bg-[#F9F7F3]">
+                <h1 class="font-bold text-3xl my-5">Congrats!</h1>
+                <img src="./assets/coin.png">
+                <div class="text-center">
+                    <p class="font-bold py-3">You have donated for mankind.</p>
+                </div>
+                <h2 class="my-2 font-bold text-2xl">Successfully</h2>
+                <button id="btn-continue" class="btn bg-slate-200 px-16 btn-md hover:bg-blue-100 transition-colors ease-in duration-300">Close Confirmation</button>
+            </form>
+        </dialog>
+
+
+
+ 
+<!-- Donation History Pop-up -->
+<dialog id="history-pop-up" class="modal">
+     
+        <form method="dialog" class="modal-box">
+            <h2 class="font-bold text-2xl">Donation History</h2>
+            <div id="history-content"></div>
+            <button id="btn-close-history" class="btn">Close</button>
+        </form>
+     
+</dialog>
+
+
+
+    </main>
+
+
 
 <script src="scripts.js"></script>
  
